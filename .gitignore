@@ -1,3 +1,5 @@
 Purify
 ConstructMatrix
 Jacobi
+bin/*
+test/bin/*
