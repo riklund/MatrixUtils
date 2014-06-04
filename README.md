@@ -8,9 +8,10 @@ Takes two binary square matrix objects of the form g*F + d*I where g and d are s
 
 ###Format of input matrix:
 In order, the content of an input binary file should be the following:
-1. Two unsigned integers, n and m, describing the dimensions of the matrix. Requirement: n = m since the matrix should be square.
-2. n*n complex<double>, the content of the matrix, row by row.
-3. An unsigned long long with the value 38198464.
+
+1.  Two unsigned integers, n and m, describing the dimensions of the matrix. Requirement: n = m since the matrix should be square.
+2.  n*n complex<double>, the content of the matrix, row by row.
+3.  An unsigned long long with the value 38198464.
 
 
 ##ConstructMatrix
