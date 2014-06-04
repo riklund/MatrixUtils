@@ -150,6 +150,7 @@ int main(int argc, char ** argv)
 	{
 	  fprintf(fout, "%+13.10e %+13.10e ", real(*it), imag(*it));
 	}
+  fprintf(fout, "\n");
 
   
   fclose(fout);

@@ -3,3 +3,4 @@ ConstructMatrix
 Jacobi
 bin/*
 test/bin/*
+fastkey.txt
