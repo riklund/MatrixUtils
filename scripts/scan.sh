@@ -2,7 +2,7 @@
 
 if [ $# -ne 4 ]
 then
-	echo "Usage:" $0 "nmax states contourID fix_state"
+	echo "Usage:" $0 "nmax states contourID fix_state g-value"
 	exit 1
 fi
 
@@ -16,10 +16,12 @@ do
 done
 
 scratchDrive="/scratch.local1/riklund"
+memDrive="/scratch.local1/riklund/STORAGE/SamePotDifferentPoints/matrices/"
+outDir="/net/data1/riklund/DiagOut"
 
 dir="nmax"$1"states"$2"contour"$3
-unpure0="/net/data2/riklund/SamePotDifferentPoints/matrices/"$dir"V0.obj"
-unpure1="/net/data2/riklund/SamePotDifferentPoints/matrices/"$dir"V1.obj"
+unpure0=$memDrive$dir"V0.obj"
+unpure1=$memDrive$dir"V1.obj"
 pureName=$scratchDrive/$dir".pure"
 
 
@@ -54,7 +56,7 @@ then
 	exit 6
 fi
 
-mkdir -p $scratchDrive"/"$dir
+mkdir -p $outDir"/"$dir
 
 for gH in `seq -100 100`
 do
