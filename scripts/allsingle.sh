@@ -3,7 +3,7 @@
 
 if [ $# -ne 1 ]
 then
-	echo "Usage:" $0 "g-value"
+	echo "Usage: $0 g-value"
 	exit 1
 fi
 
